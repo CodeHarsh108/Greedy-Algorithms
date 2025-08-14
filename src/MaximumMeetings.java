@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MaximumMeetings {
+
+
+
     static class Meeting implements Comparable<Meeting>{
         int start;
         int end;
@@ -13,9 +16,12 @@ public class MaximumMeetings {
         public int compareTo(Meeting other) {
             return Integer.compare(this.end, other.end);
         }
-
     }
-    public  static void printMaximum(List<Meeting> meetingList){
+
+
+
+
+    public static void printMaximum(List<Meeting> meetingList){
         Collections.sort(meetingList);
         List<Integer> selected = new ArrayList<>();
         int count = 1;
@@ -33,6 +39,11 @@ public class MaximumMeetings {
         }
         System.out.println();
     }
+
+
+
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
